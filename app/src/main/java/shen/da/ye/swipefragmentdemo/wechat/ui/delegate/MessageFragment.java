@@ -2,6 +2,7 @@ package shen.da.ye.swipefragmentdemo.wechat.ui.delegate;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,8 @@ import shen.da.ye.swipefragmentdemo.R;
  **/
 
 public class MessageFragment extends SupportFragment {
+
+    private static final String TAG = MessageFragment.class.getSimpleName();
 
     @Nullable
     @Override
@@ -41,4 +44,15 @@ public class MessageFragment extends SupportFragment {
         return fragment;
     }
 
+    @Override
+    public void onSupportVisible() {
+        super.onSupportVisible();
+        Log.e(TAG, "MessageFragment目前可见");
+    }
+
+    @Override
+    public void onSupportInvisible() {
+        super.onSupportInvisible();
+        Log.e(TAG, "MessageFragment目前不可见");
+    }
 }

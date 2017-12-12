@@ -76,4 +76,16 @@ public class FindFragment extends SupportFragment {
         fragment.setArguments(bundle);
         return fragment;
     }
+
+    @Override
+    public void onSupportVisible() {
+        super.onSupportVisible();
+        Log.e(TAG, "FindFragment目前可见");
+    }
+
+    @Override
+    public void onSupportInvisible() {
+        super.onSupportInvisible();
+        Log.e(TAG, "FindFragment目前不可见");
+    }
 }

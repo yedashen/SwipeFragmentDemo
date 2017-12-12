@@ -4,9 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（1）仿微信交互的栈是最常用的栈；（2）仿知乎交互的栈是复杂嵌套的栈；（3）仿谷歌pay交互的栈是流式栈" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goWeChat"
         android:text="去仿微信交互界面" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goZhiHu"
+        android:text="去仿知乎交互界面" />
 </LinearLayout>

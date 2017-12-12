@@ -21,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
     public void goWeChat(View view) {
         startActivity(new Intent(this, WeChatHomeActivity.class));
     }
+
+    public void goZhiHu(View view) {
+
+    }
 }
