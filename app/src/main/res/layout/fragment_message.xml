@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="额，请假装下面的这些消息按钮是一个消息列表，然后点击item会跳转界面。我这里就偷懒这样写了。而且只有消息2是有点击事件的！" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="这个模块的功能是让你体验如果开启界面、在开启界面的时候传递数据、怎么关闭当前界面、如何使用侧滑退出。请仔细看我的MessageDetailFragment的备注！" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息1" />
+
+    <Button
+        android:id="@+id/msg_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息4" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="消息6" />
+
+</LinearLayout>

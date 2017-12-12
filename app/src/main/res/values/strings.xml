@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SwipeFragmentDemo</string>
+
+    <string name="can_swipe">can be swipe-back</string>
+</resources>
