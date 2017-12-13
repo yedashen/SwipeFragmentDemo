@@ -14,11 +14,11 @@ import shen.da.ye.swipefragmentdemo.zhihu.BaseMainFragment;
  *         created by on 2017/12/12 0012. 15:50
  **/
 
-public class ZhiHuFirstFragment extends BaseMainFragment {
+public class ZhiHuFourthFragment extends BaseMainFragment {
 
-    public static ZhiHuFirstFragment newInstance() {
+    public static ZhiHuFourthFragment newInstance() {
         Bundle bundle = new Bundle();
-        ZhiHuFirstFragment fragment = new ZhiHuFirstFragment();
+        ZhiHuFourthFragment fragment = new ZhiHuFourthFragment();
         fragment.setArguments(bundle);
         return fragment;
     }
@@ -27,7 +27,7 @@ public class ZhiHuFirstFragment extends BaseMainFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_zhi_hu_first, null);
+        View view = inflater.inflate(R.layout.fragment_zhi_hu_fourth, null);
         initView(view);
         return view;
     }

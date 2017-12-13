@@ -22,6 +22,10 @@
         <activity
             android:name=".wechat.WeChatHomeActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".zhihu.ZhiHuActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

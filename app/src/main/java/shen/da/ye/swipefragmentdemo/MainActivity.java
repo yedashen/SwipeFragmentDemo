@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import shen.da.ye.swipefragmentdemo.wechat.WeChatHomeActivity;
+import shen.da.ye.swipefragmentdemo.zhihu.ZhiHuActivity;
 
 /**
  * @author ChenYe
@@ -23,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goZhiHu(View view) {
-
+        startActivity(new Intent(this, ZhiHuActivity.class));
     }
 }
