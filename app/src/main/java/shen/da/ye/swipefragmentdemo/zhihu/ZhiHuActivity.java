@@ -12,6 +12,7 @@ import shen.da.ye.swipefragmentdemo.view.BottomBar;
 import shen.da.ye.swipefragmentdemo.view.BottomBarTab;
 import shen.da.ye.swipefragmentdemo.zhihu.event.TabSelectedEvent;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.FirstHomeFragment;
+import shen.da.ye.swipefragmentdemo.zhihu.ui.ViewPagerFragment;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.ZhiHuFirstFragment;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.ZhiHuFourthFragment;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.ZhiHuSecFragment;
@@ -85,7 +86,7 @@ public class ZhiHuActivity extends SupportActivity implements BaseMainFragment.O
                     if (currentFragment instanceof ZhiHuFirstFragment) {
                         currentFragment.popToChild(FirstHomeFragment.class, false);
                     } else if (currentFragment instanceof ZhiHuSecFragment) {
-//                        currentFragment.popToChild(ViewPagerFragment.class, false);
+                        currentFragment.popToChild(ViewPagerFragment.class, false);
                     } else if (currentFragment instanceof ZhiHuThirdFragment) {
 //                        currentFragment.popToChild(ShopFragment.class, false);
                     } else if (currentFragment instanceof ZhiHuFourthFragment) {
