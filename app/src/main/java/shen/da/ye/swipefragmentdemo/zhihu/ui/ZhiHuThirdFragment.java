@@ -28,23 +28,14 @@ public class ZhiHuThirdFragment extends BaseMainFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_zhi_hu_third, null);
-        initView(view);
         return view;
-    }
-
-    private void initView(View view) {
-
     }
 
     @Override
     public void onLazyInitView(@Nullable Bundle savedInstanceState) {
         super.onLazyInitView(savedInstanceState);
-
-    }
-
-    @Override
-    public void onSupportVisible() {
-        super.onSupportVisible();
-        //当当前界面界面对用户可见的时候
+        if (findChildFragment(ShopFragment.class) == null) {
+            loadRootFragment(R.id.zhi_hu_third_container, ShopFragment.newInstance());
+        }
     }
 }

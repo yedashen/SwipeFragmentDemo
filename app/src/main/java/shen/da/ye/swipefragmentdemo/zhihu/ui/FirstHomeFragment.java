@@ -82,7 +82,6 @@ public class FirstHomeFragment extends SupportFragment {
             public void onItemClickListener(int position, FirstHomeAdapter.HomeViewHolder holder) {
                 Article item = adapter.getItem(position);
                 FirstDetailFragment fragment = FirstDetailFragment.newInstance(item);
-
                 // 这里是使用SharedElement的用例
                 // LOLLIPOP(5.0)系统的 SharedElement支持有 系统BUG， 这里判断大于 > LOLLIPOP
                 if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {

@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 
+import org.greenrobot.eventbus.Subscribe;
+
 import me.yokeyword.eventbusactivityscope.EventBusActivityScope;
 import me.yokeyword.fragmentation.SupportActivity;
 import me.yokeyword.fragmentation.SupportFragment;
@@ -12,6 +14,7 @@ import shen.da.ye.swipefragmentdemo.view.BottomBar;
 import shen.da.ye.swipefragmentdemo.view.BottomBarTab;
 import shen.da.ye.swipefragmentdemo.zhihu.event.TabSelectedEvent;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.FirstHomeFragment;
+import shen.da.ye.swipefragmentdemo.zhihu.ui.ShopFragment;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.ViewPagerFragment;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.ZhiHuFirstFragment;
 import shen.da.ye.swipefragmentdemo.zhihu.ui.ZhiHuFourthFragment;
@@ -88,7 +91,7 @@ public class ZhiHuActivity extends SupportActivity implements BaseMainFragment.O
                     } else if (currentFragment instanceof ZhiHuSecFragment) {
                         currentFragment.popToChild(ViewPagerFragment.class, false);
                     } else if (currentFragment instanceof ZhiHuThirdFragment) {
-//                        currentFragment.popToChild(ShopFragment.class, false);
+                        currentFragment.popToChild(ShopFragment.class, false);
                     } else if (currentFragment instanceof ZhiHuFourthFragment) {
 //                        currentFragment.popToChild(MeFragment.class, false);
                     }
