@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 
-import org.greenrobot.eventbus.Subscribe;
-
 import me.yokeyword.eventbusactivityscope.EventBusActivityScope;
 import me.yokeyword.fragmentation.SupportActivity;
 import me.yokeyword.fragmentation.SupportFragment;
@@ -60,6 +58,7 @@ public class ZhiHuActivity extends SupportActivity implements BaseMainFragment.O
 
         initView();
     }
+
 
     private void initView() {
         mBottomBar = (BottomBar) findViewById(R.id.zhi_hu_br);
